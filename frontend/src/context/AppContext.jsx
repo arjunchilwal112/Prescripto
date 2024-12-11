@@ -10,7 +10,7 @@ const AppContextProvider=(props)=>{
     const [doctors, setDoctors] = useState([])
     const [token, setToken] = useState(localStorage.getItem('token')?localStorage.getItem('token'):false)
 const currencySymbol='$'
-const backendUrl= "https://prescripto-backend-arjun.onrender.com"
+const backendUrl=import.meta.env.VITE_BACKEND_URL
 const [userData, setuserData] = useState(false)
 
 
