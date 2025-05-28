@@ -12,8 +12,6 @@ UserRouter.post('/update-profile',upload.single('image'),AuthUser,updateProfile)
 UserRouter.post('/book-appointment',AuthUser,BookAppointment)
 UserRouter.get('/appointments',AuthUser,listAppointment)
 UserRouter.post('/cancel-appointment',AuthUser,CancelAppointment)
-UserRouter.post('/payment-razorpay',AuthUser,paymentRazorpay)
-UserRouter.post('/verifyRazorpay',AuthUser,verifyRaazorpay)
 
 
 export default UserRouter
